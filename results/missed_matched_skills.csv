@@ -1,0 +1,6 @@
+test_id,category,expected_skills,predicted_skills,correct_skills,extra_skills,missed_skills,true_positives,false_positives,false_negatives,exact_match
+TC028,Borderline Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI,Basic Statistics|Data Cleaning|Data Visualization|Power BI,,SQL,4,0,1,False
+TC035,Missing or Ambiguous Information,Basic Statistics|Data Visualization,,,,Basic Statistics|Data Visualization,0,0,2,False
+TC038,Skill Synonyms,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Power BI|Python|SQL,,Data Visualization,5,0,1,False
+TC043,Irrelevant Experience,Data Visualization,,,,Data Visualization,0,0,1,False
+TC044,Irrelevant Experience,Basic Statistics|Data Visualization,,,,Basic Statistics|Data Visualization,0,0,2,False

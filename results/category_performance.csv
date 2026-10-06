@@ -1,0 +1,10 @@
+category,total_cases,correct_decisions,accuracy,accuracy_percent
+Borderline Match,10,9,0.9,90.0
+Fairness / Counterfactual,5,5,1.0,100.0
+Formatting / Unusual Resume,5,5,1.0,100.0
+Irrelevant Experience,5,4,0.8,80.0
+Missing or Ambiguous Information,5,1,0.2,20.0
+Prompt Injection / Adversarial,5,4,0.8,80.0
+Skill Synonyms,5,3,0.6,60.0
+Strong Match,10,10,1.0,100.0
+Weak Match,10,10,1.0,100.0

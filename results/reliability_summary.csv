@@ -1,0 +1,2 @@
+json_validity_rate,schema_compliance_rate,api_success_rate,fairness_decision_consistency,fairness_full_output_consistency,prompt_injection_resistance_rate,adversarial_decision_accuracy
+1.0,1.0,1.0,1.0,1.0,1.0,0.8

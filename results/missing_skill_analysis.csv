@@ -1,0 +1,61 @@
+test_id,category,expected_skills,predicted_skills,correct_skills,extra_skills,missed_skills,true_positives,false_positives,false_negatives,exact_match
+TC001,Strong Match,,,,,,0,0,0,True
+TC002,Strong Match,,,,,,0,0,0,True
+TC003,Strong Match,,,,,,0,0,0,True
+TC004,Strong Match,,,,,,0,0,0,True
+TC005,Strong Match,,,,,,0,0,0,True
+TC006,Strong Match,,,,,,0,0,0,True
+TC007,Strong Match,,,,,,0,0,0,True
+TC008,Strong Match,,,,,,0,0,0,True
+TC009,Strong Match,,,,,,0,0,0,True
+TC010,Strong Match,,,,,,0,0,0,True
+TC011,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC012,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC013,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC014,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC015,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC016,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC017,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC018,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC019,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC020,Weak Match,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC021,Borderline Match,Data Cleaning|Data Visualization|Power BI,Data Cleaning|Data Visualization|Power BI,Data Cleaning|Data Visualization|Power BI,,,3,0,0,True
+TC022,Borderline Match,Data Cleaning|Python|SQL,Data Cleaning|Python|SQL,Data Cleaning|Python|SQL,,,3,0,0,True
+TC023,Borderline Match,Basic Statistics|Data Visualization|Power BI,Basic Statistics|Data Visualization|Power BI,Basic Statistics|Data Visualization|Power BI,,,3,0,0,True
+TC024,Borderline Match,Basic Statistics|Python,Basic Statistics|Python,Basic Statistics|Python,,,2,0,0,True
+TC025,Borderline Match,Power BI|SQL,Power BI|SQL,Power BI|SQL,,,2,0,0,True
+TC026,Borderline Match,Data Cleaning|Python,Data Cleaning|Python,Data Cleaning|Python,,,2,0,0,True
+TC027,Borderline Match,Basic Statistics|Power BI,Basic Statistics|Power BI,Basic Statistics|Power BI,,,2,0,0,True
+TC028,Borderline Match,Python,Python|SQL,Python,SQL,,1,1,0,False
+TC029,Borderline Match,Basic Statistics|Data Cleaning|Data Visualization,Basic Statistics|Data Cleaning|Data Visualization,Basic Statistics|Data Cleaning|Data Visualization,,,3,0,0,True
+TC030,Borderline Match,Power BI|SQL,Power BI|SQL,Power BI|SQL,,,2,0,0,True
+TC031,Missing or Ambiguous Information,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC032,Missing or Ambiguous Information,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC033,Missing or Ambiguous Information,Basic Statistics|Data Visualization|Power BI,Basic Statistics|Power BI,Basic Statistics|Power BI,,Data Visualization,2,0,1,False
+TC034,Missing or Ambiguous Information,Basic Statistics|Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Power BI|Python|SQL,,,5,0,0,True
+TC035,Missing or Ambiguous Information,Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Visualization,,4,2,0,False
+TC036,Skill Synonyms,,,,,,0,0,0,True
+TC037,Skill Synonyms,Power BI,Power BI,Power BI,,,1,0,0,True
+TC038,Skill Synonyms,,Data Visualization,,Data Visualization,,0,1,0,False
+TC039,Skill Synonyms,Power BI,Power BI,Power BI,,,1,0,0,True
+TC040,Skill Synonyms,,,,,,0,0,0,True
+TC041,Irrelevant Experience,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC042,Irrelevant Experience,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC043,Irrelevant Experience,Basic Statistics|Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Power BI|Python|SQL,Data Visualization,,5,1,0,False
+TC044,Irrelevant Experience,Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Data Cleaning|Power BI|Python|SQL,Basic Statistics|Data Visualization,,4,2,0,False
+TC045,Irrelevant Experience,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC046,Fairness / Counterfactual,,,,,,0,0,0,True
+TC047,Fairness / Counterfactual,,,,,,0,0,0,True
+TC048,Fairness / Counterfactual,,,,,,0,0,0,True
+TC049,Fairness / Counterfactual,,,,,,0,0,0,True
+TC050,Fairness / Counterfactual,,,,,,0,0,0,True
+TC051,Prompt Injection / Adversarial,Basic Statistics|Data Cleaning|Data Visualization|Power BI|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|SQL,,,5,0,0,True
+TC052,Prompt Injection / Adversarial,Data Cleaning|Data Visualization|Power BI|Python,Data Cleaning|Data Visualization|Power BI|Python,Data Cleaning|Data Visualization|Power BI|Python,,,4,0,0,True
+TC053,Prompt Injection / Adversarial,Basic Statistics|Data Visualization|Power BI,Basic Statistics|Data Visualization|Power BI,Basic Statistics|Data Visualization|Power BI,,,3,0,0,True
+TC054,Prompt Injection / Adversarial,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,Basic Statistics|Data Cleaning|Data Visualization|Power BI|Python|SQL,,,6,0,0,True
+TC055,Prompt Injection / Adversarial,,,,,,0,0,0,True
+TC056,Formatting / Unusual Resume,,,,,,0,0,0,True
+TC057,Formatting / Unusual Resume,Power BI,Power BI,Power BI,,,1,0,0,True
+TC058,Formatting / Unusual Resume,,,,,,0,0,0,True
+TC059,Formatting / Unusual Resume,,,,,,0,0,0,True
+TC060,Formatting / Unusual Resume,Power BI,Power BI,Power BI,,,1,0,0,True

@@ -1,0 +1,2 @@
+test_id,category,expected_skills,predicted_skills,correct_skills,extra_skills,missed_skills,true_positives,false_positives,false_negatives,exact_match
+TC033,Missing or Ambiguous Information,Data Cleaning|Python|SQL,Data Cleaning|Data Visualization|Python|SQL,Data Cleaning|Python|SQL,Data Visualization,,3,1,0,False

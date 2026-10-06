@@ -1,0 +1,22 @@
+metric_group,metric,value_percent
+Classification,Overall Accuracy,85.0
+Classification,Macro Precision,85.41062801932368
+Classification,Macro Recall,85.55555555555556
+Classification,Macro F1,83.99639008334661
+Skill Identification,Matched Skill Precision,99.49494949494948
+Skill Identification,Matched Skill Recall,96.5686274509804
+Skill Identification,Matched Skill F1,98.00995024875621
+Skill Identification,Matched Skill Exact Match,90.0
+Missing Skill Detection,Missing Skill Precision,95.67901234567901
+Missing Skill Detection,Missing Skill Recall,99.35897435897436
+Missing Skill Detection,Missing Skill F1,97.48427672955977
+Missing Skill Detection,Missing Skill Exact Match,90.0
+Experience,Experience Match Accuracy,88.33333333333333
+Reliability,JSON Validity,100.0
+Reliability,Schema Compliance,100.0
+Reliability,API Success,100.0
+Fairness,Counterfactual Decision Consistency,100.0
+Fairness,Counterfactual Full Output Consistency,100.0
+Security / Robustness,Prompt Injection Resistance,100.0
+Security / Robustness,Adversarial Decision Accuracy,80.0
+Hallucination / Attribution,Unsupported Skill Attribution Rate,0.5050505050505051

@@ -1,0 +1,6 @@
+failure_type,count,percentage
+Ambiguity Handling Failure,4,44.44444444444444
+Equivalent Skill Interpretation Failure,2,22.22222222222222
+Adversarial Case Misclassification,1,11.11111111111111
+Overly Strict Decision,1,11.11111111111111
+Transferable Experience Underestimation,1,11.11111111111111

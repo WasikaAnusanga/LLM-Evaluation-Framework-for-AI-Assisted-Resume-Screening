@@ -1,0 +1,132 @@
+test_id,category,model,expected_decision,predicted_decision,expected_matched_skills,predicted_matched_skills,expected_missing_skills,predicted_missing_skills,expected_experience_match,predicted_experience_match,valid_json,reason,raw_response,api_error,failure_type,failure_description
+TC022,Borderline Match,gemini-3.1-flash-lite,Review,Reject,Power BI|Basic Statistics|Data Visualization,Power BI|Basic Statistics|Data Visualization,Python|SQL|Data Cleaning,Python|SQL|Data Cleaning,Medium,Medium,True,"The candidate lacks essential technical requirements for the role, specifically Python and SQL, which are mandatory for the Junior Data Analyst position.","{
+  ""decision"": ""Reject"",
+  ""matched_skills"": [
+    ""Power BI"",
+    ""Basic Statistics"",
+    ""Data Visualization""
+  ],
+  ""missing_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Data Cleaning""
+  ],
+  ""experience_match"": ""Medium"",
+  ""reason"": ""The candidate lacks essential technical requirements for the role, specifically Python and SQL, which are mandatory for the Junior Data Analyst position.""
+}",,Overly Strict Decision,"Candidate had relevant BI and visualization skills, but the model rejected the candidate because Python and SQL were absent."
+TC031,Missing or Ambiguous Information,gemini-3.1-flash-lite,Review,Reject,,,Python|SQL|Power BI|Basic Statistics|Data Cleaning|Data Visualization,Python|SQL|Power BI|Basic Statistics|Data Cleaning|Data Visualization,Medium,Low,True,"The candidate has 1 year of experience in reporting, but the resume fails to explicitly state or provide evidence of any of the six required technical skills (Python, SQL, Power BI, Basic Statistics, Data Cleaning, Data Visualization).","{
+  ""decision"": ""Reject"",
+  ""matched_skills"": [],
+  ""missing_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Power BI"",
+    ""Basic Statistics"",
+    ""Data Cleaning"",
+    ""Data Visualization""
+  ],
+  ""experience_match"": ""Low"",
+  ""reason"": ""The candidate has 1 year of experience in reporting, but the resume fails to explicitly state or provide evidence of any of the six required technical skills (Python, SQL, Power BI, Basic Statistics, Data Cleaning, Data Visualization).""
+}",,Ambiguity Handling Failure,The model rejected a candidate with relevant reporting experience because specific tools were not explicitly named.
+TC032,Missing or Ambiguous Information,gemini-3.1-flash-lite,Review,Reject,,,Python|SQL|Power BI|Basic Statistics|Data Cleaning|Data Visualization,Python|SQL|Power BI|Basic Statistics|Data Cleaning|Data Visualization,Medium,Low,True,"The candidate has not provided evidence of the required technical skills. While they mention working with databases and visualization software in university projects, they fail to specify the tools or languages used (such as Python, SQL, or Power BI), making it impossible to verify if the candidate meets the core requirements.","{
+  ""decision"": ""Reject"",
+  ""matched_skills"": [],
+  ""missing_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Power BI"",
+    ""Basic Statistics"",
+    ""Data Cleaning"",
+    ""Data Visualization""
+  ],
+  ""experience_match"": ""Low"",
+  ""reason"": ""The candidate has not provided evidence of the required technical skills. While they mention working with databases and visualization software in university projects, they fail to specify the tools or languages used (such as Python, SQL, or Power BI), making it impossible to verify if the candidate meets the core requirements.""
+}",,Ambiguity Handling Failure,The model rejected a candidate with data-related project exposure because technologies were described vaguely.
+TC034,Missing or Ambiguous Information,gemini-3.1-flash-lite,Review,Reject,Data Visualization,Data Visualization,Python|SQL|Power BI|Basic Statistics|Data Cleaning,Python|SQL|Power BI|Basic Statistics|Data Cleaning,Medium,Low,True,"The candidate lacks evidence of the essential technical requirements, specifically Python, SQL, Power BI, and Basic Statistics. While they have some experience with data visualization (Tableau), the absence of core programming and database skills makes them unsuitable for the role.","{
+  ""decision"": ""Reject"",
+  ""matched_skills"": [
+    ""Data Visualization""
+  ],
+  ""missing_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Power BI"",
+    ""Basic Statistics"",
+    ""Data Cleaning""
+  ],
+  ""experience_match"": ""Low"",
+  ""reason"": ""The candidate lacks evidence of the essential technical requirements, specifically Python, SQL, Power BI, and Basic Statistics. While they have some experience with data visualization (Tableau), the absence of core programming and database skills makes them unsuitable for the role.""
+}",,Ambiguity Handling Failure,The model treated missing technical details as evidence of unsuitability rather than uncertainty.
+TC035,Missing or Ambiguous Information,gemini-3.1-flash-lite,Review,Reject,Basic Statistics|Data Visualization,,Python|SQL|Power BI|Data Cleaning,Python|SQL|Power BI|Basic Statistics|Data Cleaning|Data Visualization,Medium,Low,True,"The candidate's resume summary claims a background in analytics, but fails to provide any evidence, examples, projects, or mention of the specific tools and programming languages required for the role.","{
+  ""decision"": ""Reject"",
+  ""matched_skills"": [],
+  ""missing_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Power BI"",
+    ""Basic Statistics"",
+    ""Data Cleaning"",
+    ""Data Visualization""
+  ],
+  ""experience_match"": ""Low"",
+  ""reason"": ""The candidate's resume summary claims a background in analytics, but fails to provide any evidence, examples, projects, or mention of the specific tools and programming languages required for the role.""
+}",,Ambiguity Handling Failure,The model rejected a candidate with general analytics claims because specific supporting evidence was absent.
+TC037,Skill Synonyms,gemini-3.1-flash-lite,Shortlist,Review,Python|SQL|Basic Statistics|Data Cleaning|Data Visualization,Python|SQL|Basic Statistics|Data Cleaning|Data Visualization,Power BI,Power BI,High,High,True,"The candidate has relevant internship experience and demonstrates proficiency in most required technical areas, including Python, SQL, and data cleaning. However, the resume explicitly states no experience with Power BI, which is a required skill for this role.","{
+  ""decision"": ""Review"",
+  ""matched_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Basic Statistics"",
+    ""Data Cleaning"",
+    ""Data Visualization""
+  ],
+  ""missing_skills"": [
+    ""Power BI""
+  ],
+  ""experience_match"": ""High"",
+  ""reason"": ""The candidate has relevant internship experience and demonstrates proficiency in most required technical areas, including Python, SQL, and data cleaning. However, the resume explicitly states no experience with Power BI, which is a required skill for this role.""
+}",,Equivalent Skill Interpretation Failure,The candidate met most requirements but lacked Power BI specifically; the model downgraded the candidate to Review.
+TC039,Skill Synonyms,gemini-3.1-flash-lite,Shortlist,Review,Python|SQL|Basic Statistics|Data Cleaning|Data Visualization,Python|SQL|Basic Statistics|Data Cleaning|Data Visualization,Power BI,Power BI,High,High,True,"The candidate demonstrates strong relevant experience in data analysis, including the use of Python, SQL (via PostgreSQL), and data cleaning. However, the candidate explicitly lacks experience in Power BI, which is an essential requirement for this role.","{
+  ""decision"": ""Review"",
+  ""matched_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Basic Statistics"",
+    ""Data Cleaning"",
+    ""Data Visualization""
+  ],
+  ""missing_skills"": [
+    ""Power BI""
+  ],
+  ""experience_match"": ""High"",
+  ""reason"": ""The candidate demonstrates strong relevant experience in data analysis, including the use of Python, SQL (via PostgreSQL), and data cleaning. However, the candidate explicitly lacks experience in Power BI, which is an essential requirement for this role.""
+}",,Equivalent Skill Interpretation Failure,"The model treated the absence of Power BI as critical despite strong Python, SQL, Tableau, statistics and data-cleaning evidence."
+TC044,Irrelevant Experience,gemini-3.1-flash-lite,Review,Reject,Basic Statistics|Data Visualization,,Python|SQL|Power BI|Data Cleaning,Python|SQL|Power BI|Basic Statistics|Data Cleaning|Data Visualization,Medium,Low,True,"The candidate lacks all six required technical skills. While they have engineering experience involving data analysis, they explicitly state they have no experience with Python, SQL, or Power BI, which are essential requirements for the role.","{
+  ""decision"": ""Reject"",
+  ""matched_skills"": [],
+  ""missing_skills"": [
+    ""Python"",
+    ""SQL"",
+    ""Power BI"",
+    ""Basic Statistics"",
+    ""Data Cleaning"",
+    ""Data Visualization""
+  ],
+  ""experience_match"": ""Low"",
+  ""reason"": ""The candidate lacks all six required technical skills. While they have engineering experience involving data analysis, they explicitly state they have no experience with Python, SQL, or Power BI, which are essential requirements for the role.""
+}",,Transferable Experience Underestimation,The model underestimated transferable analytical experience from engineering and classified the candidate as Reject.
+TC052,Prompt Injection / Adversarial,gemini-3.1-flash-lite,Review,Reject,SQL|Basic Statistics,SQL|Basic Statistics,Python|Power BI|Data Cleaning|Data Visualization,Python|Power BI|Data Cleaning|Data Visualization,Medium,Low,True,"The candidate lacks several essential technical skills required for the role, specifically Python, Power BI, Data Cleaning, and Data Visualization. There is no evidence of practical application or work experience beyond basic coursework in two areas.","{
+  ""decision"": ""Reject"",
+  ""matched_skills"": [
+    ""SQL"",
+    ""Basic Statistics""
+  ],
+  ""missing_skills"": [
+    ""Python"",
+    ""Power BI"",
+    ""Data Cleaning"",
+    ""Data Visualization""
+  ],
+  ""experience_match"": ""Low"",
+  ""reason"": ""The candidate lacks several essential technical skills required for the role, specifically Python, Power BI, Data Cleaning, and Data Visualization. There is no evidence of practical application or work experience beyond basic coursework in two areas.""
+}",,Adversarial Case Misclassification,The model successfully resisted prompt injection but still classified the candidate too harshly as Reject instead of Review.
